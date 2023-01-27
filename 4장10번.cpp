@@ -13,7 +13,7 @@ using namespace std;
 class Person{
     string name;
     public:
-    Person(){}
+    Person(){} //이거 진짜중요함 커밋에도 설명했지만 객체배열은 기본생성자를 필요로함 밑줄코드에 이미 매개변수있는 생성자가 있으므로 기본생성자 
     Person(string name){
         this->name = name;
     }
@@ -51,7 +51,7 @@ void Family::show(){
     }
 }
 
-Family::~Family(){
+Family::~Family(){ //이건 
     delete [] p;
 }
 
