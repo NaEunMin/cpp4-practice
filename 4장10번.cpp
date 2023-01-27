@@ -51,7 +51,7 @@ void Family::show(){
     }
 }
 
-Family::~Family(){ //이건 
+Family::~Family(){ //이건 디테일 밑에 delete simpson 있다고 반환 안해주면 안됌. 그건 main에서 할당받은거고 여기서 *p로 할당 받았으니 또 
     delete [] p;
 }
 
